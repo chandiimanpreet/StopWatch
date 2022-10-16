@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+    <title>StopWatch</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container ">
+            <div class="row justify-content-center">
+                <div class="col mt-4">
+                    <h2 class="font-weight-bold  text-uppercase text-center">Stopwatch</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <p class="bg-secondary mr-2 p-2" id="hour">1</p>:
+                <p class="bg-secondary ml-2 mr-2 p-2" id="minute">23</p>: 
+                <p class="bg-secondary ml-2 mr-2 p-2" id="second">43</p>:
+                <p class="bg-secondary ml-2 p-2" id="fastSecond">29</p> 
+            </div>
+            <div class="row text-center">
+                <div class="col mt-5">
+                    <div class="btn btn-danger text-white btn-lg" id="stop">Stop</div>
+                    <div class="btn btn-success text-white btn-lg" id="start">Start</div>
+                    <div class="btn btn-warning text-white btn-lg" id="restart">Restart</div>
+                    <div class="btn btn-dark text-white btn-lg" id="lap">Lap</div>
+                    <div class="btn btn-primary text-white btn-lg" id="clearlap">ClearLaps</div>
+                </div>
+            </div>           
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center ">
+            <!-- <h3 class="text-uppercase text-center">Laps</h3> -->
+            <div class="col mt-3 add-laps">
+                <div class="lap-1 d-flex justify-content-center border border-danger">
+                    <p class="hr mr-1">2</p>:
+                    <p class="min ml-1 mr-1">23</p>:
+                    <p class="sec ml-1">12</p>
+                </div>
+                
+            </div>            
+        </div>
+    </div>
+
+
+    
+</body>
+<script src="/script.js"></script>
+
+</html>
