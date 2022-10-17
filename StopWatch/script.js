@@ -51,28 +51,34 @@ function lapfxn() {
     minute = document.getElementById('minute').textContent;
     second = document.getElementById('second').textContent;
     
-    let newLap = document.createElement('div');
-    newLap.classList.add('lap-1 d-flex justify-content-center border border-danger');
+console.log(hour);
+console.log(minute);
+console.log(second);
 
-    newLap.innerHTML(`<p class="hr mr-1">${hour}</p>:
+    let newLap = document.createElement('div');
+    newLap.classList.add('lap-1');
+    newLap.classList.add('d-flex');
+    newLap.classList.add('justify-content-center');
+    newLap.classList.add('border');
+    newLap.classList.add('border-danger');
+    newLap.classList.add('mb-2');
+        
+
+    newLap.innerHTML = `<p class="hr mr-1">${hour}</p>:
             <p class="min ml-1 mr-1">${minute}</p>:
-            <p class="sec ml-1">${second}</p>`);
+            <p class="sec ml-1">${second}</p>`;
 
         document.querySelector('.add-laps').appendChild(newLap);    
-
-    // let newLap = document.querySelector('.add-laps')..(`
-    //     <div class="lap-1 d-flex justify-content-center border border-danger">
-    //         <p class="hr mr-1">${hour}</p>:
-    //         <p class="min ml-1 mr-1">${minute}</p>:
-    //         <p class="sec ml-1">${second}</p>
-    //     </div>
-    // `);
-
-    document.querySelector('.add-laps').cl
+        
 }
 
 function clearLap() {
+    
+    let laps = document.querySelector('.add-laps');    
 
+    while(laps.hasChildNodes()) {
+        laps.removeChild(laps.firstChild);
+    }
 }
 
 
